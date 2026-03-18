@@ -258,7 +258,7 @@ export default function Index() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Самопроверка</div>
+            <div className="font-oswald text-[#E30613] text-2xl uppercase tracking-widest mb-3 font-bold">Самопроверка</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Этот проект для вас, если вы:</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
