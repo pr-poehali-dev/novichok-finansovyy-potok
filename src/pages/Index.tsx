@@ -64,14 +64,14 @@ function Timer() {
   const s = String(seconds % 60).padStart(2, "0");
 
   return (
-    <div className="mt-3 flex flex-col items-center gap-1">
-      <p className="text-sm font-semibold text-[#E30613] uppercase tracking-wider">⚠ Места ограничены</p>
-      <div className="flex items-center gap-1">
-        <div className="bg-black text-white font-oswald text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-lg">{m}</div>
-        <span className="text-black font-oswald text-2xl font-bold">:</span>
-        <div className="bg-black text-white font-oswald text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-lg">{s}</div>
+    <div className="mt-4 bg-pink-100 border border-pink-300 rounded-2xl px-8 py-4 flex flex-col items-center gap-2 shadow-sm">
+      <p className="text-lg font-oswald font-bold text-[#E30613] uppercase tracking-widest animate-pulse">⚠ МЕСТА ОГРАНИЧЕНЫ</p>
+      <div className="flex items-center gap-2">
+        <div className="bg-[#3183FF] text-white font-oswald text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-xl shadow">{m}</div>
+        <span className="text-gray-800 font-oswald text-3xl font-bold">:</span>
+        <div className="bg-[#3183FF] text-white font-oswald text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-xl shadow">{s}</div>
       </div>
-      <p className="text-xs text-gray-500">до конца бронирования</p>
+      <p className="text-sm text-gray-500 font-medium">до конца бронирования</p>
     </div>
   );
 }
@@ -390,8 +390,17 @@ export default function Index() {
               <Icon name="Quote" size={80} className="text-[#E30613]" />
             </div>
             <div className="relative z-10">
-              <div className="font-oswald text-2xl font-bold mb-1">Евгений</div>
-              <div className="text-[#3183FF] text-sm mb-6 font-medium">Основатель стратегии «Квантовый Скачок»</div>
+              <div className="flex items-center gap-5 mb-6">
+                <img
+                  src="https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/bucket/89c61107-6718-40d7-a573-c668b5f532f9.png"
+                  alt="Евгений"
+                  className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover object-top border-4 border-[#E30613] shadow-lg flex-shrink-0"
+                />
+                <div>
+                  <div className="font-oswald text-2xl font-bold mb-1">Евгений</div>
+                  <div className="text-[#3183FF] text-sm font-medium">Основатель стратегии «Квантовый Скачок»</div>
+                </div>
+              </div>
 
               <p className="text-gray-700 leading-relaxed mb-4">
                 Я — обычный парень из села. Никаких кредитов, займов или стартового капитала. Но благодаря стратегии «Квантовый скачок» я создал за 10 месяцев денежный поток более <strong className="text-[#E30613]">1 000 000 рублей</strong>, начав с откладывания всего от 10 000 рублей в месяц.
