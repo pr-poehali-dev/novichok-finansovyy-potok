@@ -180,9 +180,9 @@ export default function StrategySection() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4 text-black">
-              «Квантовый Скачок — Поток Новичка»
+              «<span className="text-[#E30613]">Квантовый Скачок</span> — <span className="text-[#3183FF]">Поток Новичка</span>»
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-700 font-semibold max-w-xl mx-auto">
               Поток Новичка — это стратегия, которая сочетает:
             </p>
           </div>
