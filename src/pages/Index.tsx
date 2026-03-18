@@ -70,9 +70,9 @@ export default function Index() {
             <a href="#consultation" className="hover:text-[#E30613] transition-colors">Консультация</a>
             <a href="#faq" className="hover:text-[#E30613] transition-colors">FAQ</a>
           </nav>
-          <button className="bg-[#E30613] text-white font-oswald font-semibold px-6 py-2 text-sm uppercase tracking-wider hover:bg-red-700 transition-colors">
-            Участвовать
-          </button>
+          <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="bg-[#E30613] text-white font-oswald font-semibold px-6 py-2 text-sm uppercase tracking-wider hover:bg-red-700 transition-colors rounded-full">
+            Записаться на Бесплатную Консультацию
+          </a>
         </div>
       </header>
 
@@ -244,12 +244,9 @@ export default function Index() {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-              Хочу участвовать
-            </button>
-            <button className="border border-gray-300 text-black font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-gray-500 transition-colors">
-              Узнать подробнее
-            </button>
+            <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
+              Записаться на Бесплатную Консультацию
+            </a>
           </div>
         </div>
       </section>
@@ -345,12 +342,9 @@ export default function Index() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-              Хочу участвовать
-            </button>
-            <button className="border border-gray-300 text-black font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-gray-500 transition-colors">
-              Записаться
-            </button>
+            <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full text-center">
+              Записаться на Бесплатную Консультацию
+            </a>
           </div>
         </div>
       </section>
@@ -423,9 +417,9 @@ export default function Index() {
             <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
             <p className="text-gray-600 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
             <p className="text-black font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>
-            <button className="bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-              Записаться на консультацию
-            </button>
+            <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
+              Записаться на Бесплатную Консультацию
+            </a>
           </div>
         </div>
       </section>
@@ -465,9 +459,9 @@ export default function Index() {
           </div>
 
           <div className="text-center">
-            <button className="bg-[#E30613] text-white font-oswald font-bold px-12 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-              Хочу участвовать
-            </button>
+            <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#E30613] text-white font-oswald font-bold px-12 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
+              Записаться на Бесплатную Консультацию
+            </a>
           </div>
         </div>
       </section>
