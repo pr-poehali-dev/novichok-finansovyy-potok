@@ -126,47 +126,53 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-14">
             {/* Left: Circular scheme */}
-            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8 flex flex-col items-center justify-center">
-              <div className="font-oswald text-[#3183FF] uppercase tracking-wider text-sm mb-6 self-start">Начало</div>
-              <div className="relative w-64 h-64">
-                {/* Outer ring */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 256 256">
-                  <circle cx="128" cy="128" r="118" fill="none" stroke="#E30613" strokeWidth="2" strokeDasharray="6 4" opacity="0.3"/>
-                  <circle cx="128" cy="128" r="90" fill="none" stroke="#3183FF" strokeWidth="1.5" opacity="0.15"/>
-                  {/* Arrows along circle */}
-                  <path d="M128 10 L128 10" fill="none"/>
-                  {/* Step 1 arrow: top */}
-                  <path d="M138 12 L128 8 L118 12" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  {/* Step 2 arrow: bottom-right */}
-                  <path d="M230 155 L237 145 L228 140" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  {/* Step 3 arrow: bottom-left */}
-                  <path d="M26 140 L18 150 L28 155" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-6 flex flex-col items-center justify-center min-h-[420px]">
+              <div className="font-oswald text-[#3183FF] uppercase tracking-widest text-2xl font-bold mb-8 text-center">Начало</div>
+              <div className="relative w-full" style={{ paddingBottom: '100%' }}>
+                <div className="absolute inset-0">
+                  <svg className="w-full h-full" viewBox="0 0 400 400">
+                    {/* Dashed outer ring */}
+                    <circle cx="200" cy="200" r="185" fill="none" stroke="#E30613" strokeWidth="2.5" strokeDasharray="8 5" opacity="0.35"/>
+                    {/* Inner guide ring */}
+                    <circle cx="200" cy="200" r="148" fill="none" stroke="#3183FF" strokeWidth="1.5" opacity="0.15"/>
 
-                {/* Center circle */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-28 h-28 rounded-full bg-[#E30613] flex flex-col items-center justify-center text-white shadow-lg">
-                    <div className="font-oswald text-2xl font-bold leading-none">∞</div>
-                    <div className="font-oswald text-xs uppercase tracking-wider mt-1 text-white/80">поток</div>
+                    {/* Arc arrows (curved path direction indicators) */}
+                    {/* Arrow 1→2: top-right arc */}
+                    <path d="M 315 100 A 148 148 0 0 1 360 240" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="363,240 355,228 368,225" fill="#E30613" opacity="0.7"/>
+                    {/* Arrow 2→3: bottom arc */}
+                    <path d="M 348 270 A 148 148 0 0 1 55 270" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="52,268 64,262 60,275" fill="#E30613" opacity="0.7"/>
+                    {/* Arrow 3→1: left arc */}
+                    <path d="M 40 230 A 148 148 0 0 1 285 95" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="287,94 276,103 281,91" fill="#E30613" opacity="0.7"/>
+                  </svg>
+
+                  {/* Center circle */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-28 h-28 rounded-full bg-[#E30613] flex flex-col items-center justify-center text-white shadow-xl">
+                      <div className="font-oswald text-4xl font-bold leading-none">∞</div>
+                      <div className="font-oswald text-xs uppercase tracking-wider mt-1 text-white/80">поток</div>
+                    </div>
                   </div>
-                </div>
 
-                {/* Step 1 — top */}
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-20 text-center">
-                  <div className="bg-white border-2 border-[#E30613] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#E30613] text-sm shadow">1</div>
-                  <div className="text-[10px] text-gray-600 leading-tight font-medium">от 2 000 ₽<br/>до 200 000 ₽<br/><span className="text-[#E30613] font-bold">+50%</span></div>
-                </div>
+                  {/* Step 1 — top */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 w-28 text-center">
+                    <div className="bg-white border-2 border-[#E30613] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 font-oswald font-bold text-[#E30613] text-lg shadow-md">1</div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">от <strong>2 000 ₽</strong><br/>до <strong>200 000 ₽</strong><br/><span className="text-[#E30613] font-bold text-sm">+50%</span></div>
+                  </div>
 
-                {/* Step 2 — bottom-right */}
-                <div className="absolute bottom-0 -right-4 w-20 text-center">
-                  <div className="bg-white border-2 border-[#3183FF] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#3183FF] text-sm shadow">2</div>
-                  <div className="text-[10px] text-gray-600 leading-tight font-medium">максимум<br/><span className="text-black font-bold">300 000 ₽</span></div>
-                </div>
+                  {/* Step 2 — bottom-right */}
+                  <div className="absolute bottom-2 right-0 translate-x-2 w-28 text-center">
+                    <div className="bg-white border-2 border-[#3183FF] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 font-oswald font-bold text-[#3183FF] text-lg shadow-md">2</div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">максимум<br/><strong className="text-black text-sm">300 000 ₽</strong></div>
+                  </div>
 
-                {/* Step 3 — bottom-left */}
-                <div className="absolute bottom-0 -left-4 w-20 text-center">
-                  <div className="bg-white border-2 border-[#3183FF] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#3183FF] text-sm shadow">3</div>
-                  <div className="text-[10px] text-gray-600 leading-tight font-medium">работает<br/><span className="text-[#3183FF] font-bold">бесконечно</span><br/>каждый день</div>
+                  {/* Step 3 — bottom-left */}
+                  <div className="absolute bottom-2 left-0 -translate-x-2 w-28 text-center">
+                    <div className="bg-white border-2 border-[#3183FF] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 font-oswald font-bold text-[#3183FF] text-lg shadow-md">3</div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">работает<br/><span className="text-[#3183FF] font-bold text-sm">бесконечно</span><br/>каждый день</div>
+                  </div>
                 </div>
               </div>
             </div>
