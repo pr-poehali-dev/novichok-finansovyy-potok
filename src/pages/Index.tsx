@@ -125,23 +125,50 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-14">
-            {/* Left: How it works */}
-            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8">
-              <div className="font-oswald text-[#3183FF] uppercase tracking-wider text-sm mb-5">Начало</div>
-              <ul className="space-y-4 text-gray-700 text-sm leading-relaxed">
-                <li className="flex gap-3">
-                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
-                  Участник вносит в Поток Новичка любую сумму от <strong className="text-black">2 000 ₽ до 200 000 ₽</strong>, которая увеличивается на <strong className="text-[#E30613]">50%</strong>.
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
-                  Поток можно постепенно довести до максимума <strong className="text-black">300 000 ₽</strong>.
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
-                  После достижения 300 000 ₽ поток работает <strong className="text-[#3183FF]">бесконечно</strong> с ежедневными начислениями.
-                </li>
-              </ul>
+            {/* Left: Circular scheme */}
+            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8 flex flex-col items-center justify-center">
+              <div className="font-oswald text-[#3183FF] uppercase tracking-wider text-sm mb-6 self-start">Начало</div>
+              <div className="relative w-64 h-64">
+                {/* Outer ring */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 256 256">
+                  <circle cx="128" cy="128" r="118" fill="none" stroke="#E30613" strokeWidth="2" strokeDasharray="6 4" opacity="0.3"/>
+                  <circle cx="128" cy="128" r="90" fill="none" stroke="#3183FF" strokeWidth="1.5" opacity="0.15"/>
+                  {/* Arrows along circle */}
+                  <path d="M128 10 L128 10" fill="none"/>
+                  {/* Step 1 arrow: top */}
+                  <path d="M138 12 L128 8 L118 12" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  {/* Step 2 arrow: bottom-right */}
+                  <path d="M230 155 L237 145 L228 140" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  {/* Step 3 arrow: bottom-left */}
+                  <path d="M26 140 L18 150 L28 155" fill="none" stroke="#E30613" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+
+                {/* Center circle */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-28 h-28 rounded-full bg-[#E30613] flex flex-col items-center justify-center text-white shadow-lg">
+                    <div className="font-oswald text-2xl font-bold leading-none">∞</div>
+                    <div className="font-oswald text-xs uppercase tracking-wider mt-1 text-white/80">поток</div>
+                  </div>
+                </div>
+
+                {/* Step 1 — top */}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-20 text-center">
+                  <div className="bg-white border-2 border-[#E30613] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#E30613] text-sm shadow">1</div>
+                  <div className="text-[10px] text-gray-600 leading-tight font-medium">от 2 000 ₽<br/>до 200 000 ₽<br/><span className="text-[#E30613] font-bold">+50%</span></div>
+                </div>
+
+                {/* Step 2 — bottom-right */}
+                <div className="absolute bottom-0 -right-4 w-20 text-center">
+                  <div className="bg-white border-2 border-[#3183FF] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#3183FF] text-sm shadow">2</div>
+                  <div className="text-[10px] text-gray-600 leading-tight font-medium">максимум<br/><span className="text-black font-bold">300 000 ₽</span></div>
+                </div>
+
+                {/* Step 3 — bottom-left */}
+                <div className="absolute bottom-0 -left-4 w-20 text-center">
+                  <div className="bg-white border-2 border-[#3183FF] rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-1 font-oswald font-bold text-[#3183FF] text-sm shadow">3</div>
+                  <div className="text-[10px] text-gray-600 leading-tight font-medium">работает<br/><span className="text-[#3183FF] font-bold">бесконечно</span><br/>каждый день</div>
+                </div>
+              </div>
             </div>
 
             {/* Right: Accruals */}
