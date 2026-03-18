@@ -177,29 +177,68 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Right: Accruals */}
-            <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-8">
-              <div className="font-oswald text-[#E30613] uppercase tracking-wider text-sm mb-5">Начисления</div>
-              <div className="text-center mb-6">
-                <div className="font-oswald text-6xl font-bold text-black">2%</div>
-                <div className="text-gray-500 text-sm">ежедневно на остаток потока</div>
-              </div>
-              <div className="bg-[#D9D9D9]/40 p-4 mb-4">
-                <div className="text-center">
-                  <span className="font-oswald text-3xl font-bold text-[#E30613]">6 000 ₽</span>
-                  <span className="text-gray-500 text-sm block">в день при максимальном потоке 300 000 ₽</span>
+            {/* Right: Accruals circular scheme */}
+            <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-6 flex flex-col items-center justify-center min-h-[420px]">
+              <div className="font-oswald text-[#E30613] uppercase tracking-widest text-2xl font-bold mb-8 text-center">Начисления</div>
+              <div className="relative w-full" style={{ paddingBottom: '100%' }}>
+                <div className="absolute inset-0">
+                  <svg className="w-full h-full" viewBox="0 0 400 400">
+                    {/* Dashed outer ring */}
+                    <circle cx="200" cy="200" r="185" fill="none" stroke="#E30613" strokeWidth="2.5" strokeDasharray="8 5" opacity="0.35"/>
+                    {/* Inner guide ring */}
+                    <circle cx="200" cy="200" r="148" fill="none" stroke="#3183FF" strokeWidth="1.5" opacity="0.15"/>
+
+                    {/* Arc arrow 1→2: top-right */}
+                    <path d="M 315 100 A 148 148 0 0 1 360 240" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="363,240 355,228 368,225" fill="#E30613" opacity="0.7"/>
+                    {/* Arc arrow 2→3: bottom */}
+                    <path d="M 348 270 A 148 148 0 0 1 55 270" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="52,268 64,262 60,275" fill="#E30613" opacity="0.7"/>
+                    {/* Arc arrow 3→1: left */}
+                    <path d="M 40 230 A 148 148 0 0 1 285 95" fill="none" stroke="#E30613" strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/>
+                    <polygon points="287,94 276,103 281,91" fill="#E30613" opacity="0.7"/>
+                  </svg>
+
+                  {/* Center circle */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-28 h-28 rounded-full bg-[#E30613] flex flex-col items-center justify-center text-white shadow-xl">
+                      <div className="font-oswald text-3xl font-bold leading-none">2%</div>
+                      <div className="font-oswald text-xs uppercase tracking-wider mt-1 text-white/80 text-center px-2">в день</div>
+                    </div>
+                  </div>
+
+                  {/* Step 1 — top: ежедневно */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 w-28 text-center">
+                    <div className="bg-white border-2 border-[#E30613] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 shadow-md">
+                      <span className="text-[#E30613] font-bold text-lg">%</span>
+                    </div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">
+                      <strong className="text-black text-sm">ежедневно</strong><br/>на остаток потока
+                    </div>
+                  </div>
+
+                  {/* Step 2 — bottom-right: 6000 */}
+                  <div className="absolute bottom-2 right-0 translate-x-2 w-28 text-center">
+                    <div className="bg-white border-2 border-[#E30613] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 shadow-md">
+                      <span className="text-[#E30613] font-oswald font-bold text-sm">6к</span>
+                    </div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">
+                      <strong className="text-[#E30613] text-sm">6 000 ₽</strong><br/>в день при<br/>300 000 ₽
+                    </div>
+                  </div>
+
+                  {/* Step 3 — bottom-left: split */}
+                  <div className="absolute bottom-2 left-0 -translate-x-2 w-28 text-center">
+                    <div className="bg-white border-2 border-[#3183FF] rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 shadow-md">
+                      <span className="text-[#3183FF] font-bold text-base">✦</span>
+                    </div>
+                    <div className="text-xs text-gray-700 leading-snug font-medium">
+                      <span className="text-[#3183FF] font-bold text-sm">4 000 ₽</span> реинвест<br/>
+                      <span className="text-black font-bold text-sm">2 000 ₽</span> вам
+                    </div>
+                  </div>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-700 text-sm">
-                <li className="flex gap-3">
-                  <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
-                  Реинвестировать <strong className="text-black">4 000 ₽</strong> обратно в поток для роста
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
-                  <strong className="text-black">2 000 ₽</strong> забрать на личные расходы каждый день
-                </li>
-              </ul>
             </div>
           </div>
 
