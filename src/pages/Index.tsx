@@ -4,80 +4,51 @@ import Icon from "@/components/ui/icon";
 const HERO_IMG = "https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/files/ac40b789-58f8-40a9-b06e-2c75cd5a509f.jpg";
 const QUANTUM_IMG = "https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/files/cbfacf1d-85ad-42e5-94d0-447b742fc5ea.jpg";
 
-const benefits = [
-  { icon: "TrendingUp", title: "Денежный поток с нуля", desc: "Пошаговая система для тех, кто только начинает путь к финансовой независимости" },
-  { icon: "ShieldCheck", title: "Преодоление страхов", desc: "Мощные практики, которые убирают блоки и неуверенность раз и навсегда" },
-  { icon: "Zap", title: "Квантовый результат", desc: "Прорыв к новому уровню дохода за счёт системной трансформации мышления" },
-  { icon: "Target", title: "Конкретные инструменты", desc: "Не теория — живые техники, которые работают уже в первую неделю" },
-  { icon: "Users", title: "Поддержка сообщества", desc: "Окружение единомышленников, которые идут рядом к финансовой свободе" },
-  { icon: "Award", title: "Проверенная методология", desc: "Сотни учеников уже вышли на стабильный доход по этой системе" },
+const forWhom = [
+  "Ощущаете финансовую нестабильность и хотите наконец-то взять контроль над своей экономикой.",
+  "Уже пробовали другие методы заработка, но они не привели к устойчивому результату.",
+  "Хотите создать источник пассивного дохода с возможностью быстрого роста.",
+  "Переживаете из-за рисков потери денег в новых проектах, но готовы попробовать надёжную систему, которая реально работает.",
 ];
 
-const results = [
-  { num: "500+", label: "учеников прошли курс" },
-  { num: "87%", label: "вышли на новый доход" },
-  { num: "3 мес", label: "средний срок до результата" },
-  { num: "×3", label: "средний рост дохода" },
+const lifeChanges = [
+  { icon: "Zap", text: "Уже с первого дня вы начнёте получать реальные деньги от своего Денежного Потока Новичка, а максимальную сумму ежедневного начисления вы получите в первый же день." },
+  { icon: "TrendingUp", text: "Ваш доход будет расти благодаря уникальной системе криптовалюты eCurrency, которая обеспечит более высокие выплаты и стабильность." },
+  { icon: "RefreshCw", text: "Поток Новичка обеспечит долгосрочный рост вашего капитала с возможностью реинвестировать для максимального результата." },
+  { icon: "ShieldCheck", text: "Ваши финансы будут всегда под контролем, а доход — стабильно расти каждый день." },
 ];
 
-const testimonials = [
-  {
-    name: "Марина К.",
-    age: "34 года",
-    text: "До курса боялась даже думать об инвестициях. Через 2 месяца имею первый пассивный доход. Страхи ушли — пришла уверенность.",
-    result: "+45 000 ₽/мес",
-  },
-  {
-    name: "Алексей П.",
-    age: "41 год",
-    text: "Работал на нелюбимой работе 15 лет. Курс дал не только инструменты, но и смелость сделать первый шаг. Теперь работаю на себя.",
-    result: "+120 000 ₽/мес",
-  },
-  {
-    name: "Ольга Д.",
-    age: "28 лет",
-    text: "Думала, что финансовая свобода — это только для богатых. Оказалось, это система. Сейчас деньги работают на меня.",
-    result: "+80 000 ₽/мес",
-  },
+const strategyFeatures = [
+  "Стабильное ежедневное начисление",
+  "Реинвест для увеличения потока",
+  "Личные выплаты для удовлетворения нужд",
+  "Дубликация через команду для ускоренного роста",
 ];
 
-const program = [
-  { num: "01", title: "Аудит мышления", desc: "Находим и устраняем финансовые блоки и ограничивающие убеждения" },
-  { num: "02", title: "Карта денежного потока", desc: "Строим персональную систему создания и приумножения дохода" },
-  { num: "03", title: "Первые инструменты", desc: "Запускаем первые источники пассивного и активного дохода" },
-  { num: "04", title: "Масштабирование", desc: "Выходим на стабильный поток и укрепляем финансовую базу" },
-  { num: "05", title: "Квантовый скачок", desc: "Прорываемся на новый уровень — финансовая свобода как образ жизни" },
+const idealFor = [
+  { title: "Для новичков", desc: "Позволяет начать с любой суммы и постепенно увеличивать доход благодаря выгодному курсу." },
+  { title: "Для тех, кто хочет быстрый результат", desc: "Система работает с первого дня — без долгого ожидания и сложных схем." },
+  { title: "Для инвесторов", desc: "Для тех, кто готов инвестировать больше и желает получать максимальные выплаты." },
+  { title: "Для роста каждый день", desc: "Для тех, кто хочет увеличивать свой взнос с каждым днём, обеспечивая постоянный рост дохода." },
 ];
 
-const plans = [
-  {
-    name: "Старт",
-    price: "9 900 ₽",
-    old: "19 900 ₽",
-    features: ["5 модулей курса", "Рабочие тетради", "Закрытый чат", "Доступ 6 месяцев"],
-    highlight: false,
-  },
-  {
-    name: "Поток",
-    price: "24 900 ₽",
-    old: "49 900 ₽",
-    features: ["Всё из «Старт»", "3 групповых созвона", "Личная консультация", "Доступ 12 месяцев", "Бонусные модули"],
-    highlight: true,
-  },
-  {
-    name: "VIP",
-    price: "59 900 ₽",
-    old: "99 900 ₽",
-    features: ["Всё из «Поток»", "Личное сопровождение", "Неограниченные созвоны", "Пожизненный доступ", "Приоритетная поддержка"],
-    highlight: false,
-  },
+const consultationBenefits = [
+  { icon: "Target", title: "Чёткая картина финансового будущего", desc: "Вы узнаете, какие шаги необходимо предпринять для создания стабильного источника дохода." },
+  { icon: "Map", title: "Пошаговый план финансовой свободы", desc: "Проверенная стратегия, которая поможет выйти из замкнутого круга зарплаты и долгов." },
+  { icon: "Layers", title: "Несколько источников дохода", desc: "Как создать дополнительные потоки дохода для финансовой стабильности и спокойствия." },
+  { icon: "Eye", title: "Взгляд изнутри на систему", desc: "Реальные примеры, как люди, подобные вам, уже меняют свою жизнь." },
+  { icon: "Key", title: "Доступ к эксклюзивным ресурсам", desc: "Открою доступ к личному кабинету и системам — увидите, как работает процесс изнутри." },
+  { icon: "MessageCircle", title: "Ответы на все вопросы", desc: "Разберём ваши сомнения и страхи. Полное представление о том, как начать с первого шага." },
 ];
 
 const faqs = [
-  { q: "Мне подойдёт, если я полный новичок?", a: "Да, курс создан специально для новичков. Всё объясняется с нуля, пошагово, без сложных терминов." },
-  { q: "Сколько времени нужно уделять?", a: "Достаточно 1–2 часов в день. Материалы доступны в записи — смотрите в удобное время." },
-  { q: "Когда я увижу первые результаты?", a: "Первые изменения в мышлении — уже на первой неделе. Финансовые результаты — у большинства учеников в течение 30–90 дней." },
-  { q: "Есть ли гарантия возврата денег?", a: "Да, 14 дней без вопросов. Если курс не подошёл — вернём полную стоимость." },
+  { q: "Не получилось в этой сфере, почему должно получиться сейчас?", a: "Проблемы обычно связаны с отсутствием правильной стратегии. Я дам вам чёткий план, который работает, и покажу, как избежать ошибок прошлого." },
+  { q: "Я не работал в этой сфере, у меня не получится", a: "Подойдёт даже новичкам. Мы начнём с простого и постепенно будем углубляться, шаг за шагом." },
+  { q: "Я технически не подкован — что если не смогу разобраться с технологиями?", a: "Система проста в использовании. Я проведу вас через весь процесс, даже если у вас нет технических навыков." },
+  { q: "Нужно ли вкладывать большие суммы денег, чтобы начать?", a: "Нет, старт не требует больших вложений. Начать можно от 2 000 ₽ и увеличивать поток постепенно." },
+  { q: "Как я буду знать, что это стоит моего времени?", a: "Я покажу реальные примеры успеха и дам пошаговый план, который точно работает." },
+  { q: "Я уже пробовал, но не получилось. Чем это отличается?", a: "Мы будем работать по проверенной стратегии, которая дала результат многим людям." },
+  { q: "Как записаться на консультацию?", a: "Места ограничены, напишите мне, и я забронирую для вас время." },
 ];
 
 export default function Index() {
@@ -94,80 +65,33 @@ export default function Index() {
             <span className="text-black"> НОВИЧКА</span>
           </div>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-            <a href="#benefits" className="hover:text-[#E30613] transition-colors">О курсе</a>
-            <a href="#program" className="hover:text-[#E30613] transition-colors">Программа</a>
-            <a href="#results" className="hover:text-[#E30613] transition-colors">Результаты</a>
-            <a href="#pricing" className="hover:text-[#E30613] transition-colors">Тарифы</a>
+            <a href="#about" className="hover:text-[#E30613] transition-colors">О проекте</a>
+            <a href="#author" className="hover:text-[#E30613] transition-colors">Автор</a>
+            <a href="#consultation" className="hover:text-[#E30613] transition-colors">Консультация</a>
+            <a href="#faq" className="hover:text-[#E30613] transition-colors">FAQ</a>
           </nav>
           <button className="bg-[#E30613] text-white font-oswald font-semibold px-6 py-2 text-sm uppercase tracking-wider hover:bg-red-700 transition-colors">
-            Начать
+            Участвовать
           </button>
         </div>
       </header>
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center pt-16 bg-black overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${HERO_IMG})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url(${HERO_IMG})` }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/60" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 py-24 text-center md:text-left">
           <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
-            <div className="inline-flex items-center gap-2 bg-[#E30613]/10 border border-[#E30613]/30 text-[#E30613] text-xs font-semibold px-4 py-2 uppercase tracking-widest mb-6">
-              <Icon name="Zap" size={14} />
-              Онлайн-курс · Старт сейчас
-            </div>
-
-            <h1 className="font-oswald text-white text-5xl md:text-6xl font-bold leading-none uppercase mb-6">
-              Квантовый<br />
-              <span className="text-[#E30613]">Скачок:</span><br />
-              <span className="text-3xl md:text-4xl font-medium text-gray-300">Создай Денежный</span><br />
-              <span className="text-[#3183FF]">Поток Новичка</span>
+            <h1 className="font-oswald text-white font-bold leading-none uppercase mb-8">
+              <span className="block text-5xl md:text-7xl">КВАНТОВЫЙ</span>
+              <span className="block text-5xl md:text-7xl text-[#E30613]">СКАЧОК:</span>
+              <span className="block text-3xl md:text-5xl mt-2 text-gray-200">СОЗДАЙ ДЕНЕЖНЫЙ</span>
+              <span className="block text-3xl md:text-5xl text-[#3183FF]">ПОТОК НОВИЧКА</span>
             </h1>
-
-            <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
-              Для тех, кто хочет выйти на новый уровень финансовой стабильности,
-              преодолев страхи и неуверенность.
+            <p className="text-gray-300 text-xl leading-relaxed max-w-2xl md:mx-0 mx-auto">
+              Для тех, кто хочет выйти на новый уровень финансовой стабильности, преодолев страхи и неуверенность.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-lg uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-                Хочу финансовую свободу
-              </button>
-              <button className="border border-white/30 text-white font-oswald px-8 py-4 text-lg uppercase tracking-wider hover:border-white/60 transition-colors">
-                Узнать больше
-              </button>
-            </div>
-
-            <div className="flex gap-8 mt-12 pt-8 border-t border-white/10">
-              {results.slice(0, 2).map((r) => (
-                <div key={r.num}>
-                  <div className="font-oswald text-[#E30613] text-3xl font-bold">{r.num}</div>
-                  <div className="text-gray-400 text-sm">{r.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="hidden md:block animate-fade-in" style={{ animationDelay: '0.4s', opacity: 0 }}>
-            <div className="relative">
-              <img
-                src={QUANTUM_IMG}
-                alt="Квантовый скачок"
-                className="w-full"
-                style={{ clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)' }}
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-                style={{ clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)' }}
-              />
-              <div className="absolute bottom-8 left-8 right-8 text-center">
-                <div className="font-oswald text-white text-2xl font-bold uppercase">Твой новый уровень</div>
-                <div className="text-[#3183FF] text-sm mt-1">ждёт тебя прямо сейчас</div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -176,198 +100,287 @@ export default function Index() {
         </div>
       </section>
 
-      {/* RESULTS BAR */}
-      <section className="bg-[#E30613] py-10">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {results.map((r) => (
-              <div key={r.num}>
-                <div className="font-oswald text-white text-4xl font-bold">{r.num}</div>
-                <div className="text-white/80 text-sm mt-1">{r.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BENEFITS */}
-      <section id="benefits" className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Что ты получишь</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase">О курсе</h2>
-            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {benefits.map((b) => (
-              <div
-                key={b.title}
-                className="group p-8 bg-[#D9D9D9]/30 border border-gray-100 hover:border-[#E30613]/30 hover:bg-[#E30613]/5 transition-all duration-300"
-              >
-                <div className="w-12 h-12 bg-[#E30613] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                  <Icon name={b.icon} size={22} className="text-white" />
-                </div>
-                <h3 className="font-oswald text-xl font-semibold uppercase mb-3">{b.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROGRAM */}
-      <section id="program" className="py-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-oswald text-[#3183FF] text-sm uppercase tracking-widest mb-3">5 шагов к свободе</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase">Программа курса</h2>
-            <div className="w-16 h-1 bg-[#3183FF] mx-auto mt-4" />
-          </div>
-
-          <div className="space-y-0">
-            {program.map((step) => (
-              <div
-                key={step.num}
-                className="group flex gap-6 p-6 border-b border-white/10 hover:bg-white/5 transition-colors"
-              >
-                <div className="flex-shrink-0">
-                  <div className="font-oswald text-5xl font-bold text-white/10 group-hover:text-[#E30613] transition-colors leading-none">
-                    {step.num}
-                  </div>
-                </div>
-                <div className="flex-1 pt-1">
-                  <h3 className="font-oswald text-xl font-semibold uppercase mb-2">{step.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{step.desc}</p>
-                </div>
-                <div className="flex-shrink-0 flex items-center">
-                  <div className="w-8 h-8 border border-white/20 flex items-center justify-center group-hover:border-[#E30613] group-hover:bg-[#E30613] transition-all">
-                    <Icon name="ArrowRight" size={16} className="text-white/40 group-hover:text-white" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section id="results" className="py-24 bg-[#D9D9D9]/30">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Истории успеха</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase">Результаты учеников</h2>
-            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.name} className="bg-white p-8 border-l-4 border-[#3183FF]">
-                <div className="flex items-start gap-2 mb-4">
-                  <Icon name="Quote" size={20} className="text-[#3183FF] flex-shrink-0 mt-1" />
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed mb-6 italic">{t.text}</p>
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <div>
-                    <div className="font-oswald font-semibold uppercase">{t.name}</div>
-                    <div className="text-gray-500 text-xs">{t.age}</div>
-                  </div>
-                  <div className="bg-[#E30613] text-white font-oswald font-bold px-3 py-1 text-sm">
-                    {t.result}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section id="pricing" className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Инвестиция в себя</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase">Выбери тариф</h2>
-            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 items-start">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`relative p-8 border-2 ${
-                  plan.highlight
-                    ? "border-[#E30613] bg-black text-white"
-                    : "border-gray-200 bg-white text-black"
-                }`}
-              >
-                {plan.highlight && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E30613] text-white font-oswald font-bold text-xs px-6 py-1 uppercase tracking-wider">
-                    Популярный
-                  </div>
-                )}
-
-                <div className={`font-oswald text-2xl font-bold uppercase mb-2 ${plan.highlight ? "text-white" : "text-black"}`}>
-                  {plan.name}
-                </div>
-
-                <div className="mb-6">
-                  <div className={`font-oswald text-5xl font-bold ${plan.highlight ? "text-[#E30613]" : "text-black"}`}>
-                    {plan.price}
-                  </div>
-                  <div className="text-sm line-through mt-1 text-gray-400">
-                    {plan.old}
-                  </div>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm">
-                      <div className={`w-5 h-5 flex items-center justify-center flex-shrink-0 ${plan.highlight ? "bg-[#E30613]" : "bg-black"}`}>
-                        <Icon name="Check" size={12} className="text-white" />
-                      </div>
-                      <span className={plan.highlight ? "text-gray-300" : "text-gray-600"}>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <button
-                  className={`w-full font-oswald font-bold py-4 text-sm uppercase tracking-wider transition-all ${
-                    plan.highlight
-                      ? "bg-[#E30613] text-white hover:bg-red-700"
-                      : "bg-black text-white hover:bg-gray-800"
-                  }`}
-                >
-                  Выбрать тариф
-                </button>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-gray-500 text-sm mt-8 flex items-center justify-center gap-2">
-            <Icon name="ShieldCheck" size={16} className="text-[#3183FF]" />
-            Гарантия возврата 14 дней без вопросов
+      {/* INTRO */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-gray-700 text-lg leading-relaxed mb-4">
+            Вы устали от нестабильности в финансах и хотите построить надёжный источник дохода, который будет расти с каждым месяцем?
+          </p>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Присоединяйтесь к <strong className="text-[#E30613]">«ПотокCash»</strong> и узнайте, как создавая поток с минимальными вложениями, можно получать стабильный доход уже с первого дня. Мы поможем вам не только стартовать, но и управлять финансовыми потоками.
           </p>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-24 bg-[#D9D9D9]/30">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Вопросы и ответы</div>
-            <h2 className="font-oswald text-4xl font-bold uppercase">FAQ</h2>
+      {/* STRATEGY BLOCK */}
+      <section className="py-20 bg-black text-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 text-[#E30613] font-oswald text-sm uppercase tracking-widest mb-4">
+              <span>🔥</span> Взращиваем поток новичка
+            </div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2">
+              по стратегии «Квантовый Скачок — Поток Новичка»
+            </h2>
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+              Цель: создать устойчивый денежный поток, который растёт и работает на участника, обеспечивая стабильный доход и возможность реинвеста.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-14">
+            {/* Left: How it works */}
+            <div className="bg-white/5 border border-white/10 p-8">
+              <div className="font-oswald text-[#3183FF] uppercase tracking-wider text-sm mb-5">Начало</div>
+              <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
+                <li className="flex gap-3">
+                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
+                  Участник вносит в Поток Новичка любую сумму от <strong className="text-white">2 000 ₽ до 200 000 ₽</strong>, которая увеличивается на <strong className="text-[#E30613]">50%</strong>.
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
+                  Поток можно постепенно довести до максимума <strong className="text-white">300 000 ₽</strong>.
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#E30613] font-bold mt-0.5">→</span>
+                  После достижения 300 000 ₽ поток работает <strong className="text-[#3183FF]">бесконечно</strong> с ежедневными начислениями.
+                </li>
+              </ul>
+            </div>
+
+            {/* Right: Accruals */}
+            <div className="bg-[#E30613]/10 border border-[#E30613]/30 p-8">
+              <div className="font-oswald text-[#E30613] uppercase tracking-wider text-sm mb-5">Начисления</div>
+              <div className="text-center mb-6">
+                <div className="font-oswald text-6xl font-bold text-white">2%</div>
+                <div className="text-gray-400 text-sm">ежедневно на остаток потока</div>
+              </div>
+              <div className="bg-black/30 p-4 mb-4">
+                <div className="text-center">
+                  <span className="font-oswald text-3xl font-bold text-[#E30613]">6 000 ₽</span>
+                  <span className="text-gray-400 text-sm block">в день при максимальном потоке 300 000 ₽</span>
+                </div>
+              </div>
+              <ul className="space-y-2 text-gray-300 text-sm">
+                <li className="flex gap-3">
+                  <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
+                  Реинвестировать <strong className="text-white">4 000 ₽</strong> обратно в поток для роста
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
+                  <strong className="text-white">2 000 ₽</strong> забрать на личные расходы каждый день
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
+              Хочу участвовать
+            </button>
+            <button className="border border-white/30 text-white font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-white/60 transition-colors">
+              Узнать подробнее
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FOR WHOM */}
+      <section className="py-20 bg-[#D9D9D9]/30">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Самопроверка</div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Этот проект для вас, если вы:</h2>
+            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
+          </div>
+          <div className="space-y-4 mb-12">
+            {forWhom.map((item, i) => (
+              <div key={i} className="flex gap-4 bg-white p-6 border-l-4 border-[#3183FF]">
+                <div className="w-8 h-8 bg-[#3183FF] flex items-center justify-center flex-shrink-0 text-white font-oswald font-bold text-sm">
+                  {i + 1}
+                </div>
+                <p className="text-gray-700 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-black text-white p-8">
+            <p className="text-gray-300 leading-relaxed text-center">
+              Многие традиционные способы заработка требуют огромных усилий и времени. В отличие от них, мы предлагаем автоматическую систему, где деньги начинают работать для вас с первого дня, и результаты не заставляют себя долго ждать.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFE CHANGES */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Трансформация</div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Что изменится в вашей жизни</h2>
+            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {lifeChanges.map((item, i) => (
+              <div key={i} className="group flex gap-5 p-6 bg-[#D9D9D9]/30 hover:bg-[#E30613]/5 border border-transparent hover:border-[#E30613]/20 transition-all">
+                <div className="w-12 h-12 bg-[#E30613] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Icon name={item.icon} size={22} className="text-white" />
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* STRATEGY DESCRIPTION */}
+      <section className="py-20 bg-black text-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4">
+              «Квантовый Скачок — Поток Новичка»
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">
+              Поток Новичка — это стратегия, которая сочетает:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-14">
+            {strategyFeatures.map((f, i) => (
+              <div key={i} className="flex items-center gap-4 border border-white/10 p-5 hover:border-[#E30613]/40 transition-colors">
+                <div className="w-8 h-8 bg-[#E30613] flex items-center justify-center flex-shrink-0">
+                  <Icon name="Check" size={16} className="text-white" />
+                </div>
+                <span className="text-gray-200">{f}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white/5 border border-white/10 p-8 text-center mb-12">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Участник получает <strong className="text-white">контролируемый, растущий и практически бесконечный поток дохода</strong>, который можно использовать для личных расходов и инвестиций в расширение структуры.
+            </p>
+          </div>
+
+          <div className="text-center mb-10">
+            <div className="font-oswald text-[#3183FF] text-sm uppercase tracking-widest mb-3">Кому подходит</div>
+            <h3 className="font-oswald text-2xl md:text-3xl font-bold uppercase">Этот проект идеально подходит:</h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            {idealFor.map((item, i) => (
+              <div key={i} className="bg-white/5 border border-white/10 p-6 hover:border-[#3183FF]/40 transition-colors">
+                <div className="font-oswald text-[#3183FF] uppercase font-semibold mb-2">{item.title}</div>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
+              Хочу участвовать
+            </button>
+            <button className="border border-white/30 text-white font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-white/60 transition-colors">
+              Записаться
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* AUTHOR */}
+      <section id="author" className="py-20 bg-[#D9D9D9]/30">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">История успеха</div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Автор стратегии</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
 
-          <div className="space-y-2">
+          <div className="bg-white border-l-4 border-[#E30613] p-8 md:p-12 relative">
+            <div className="absolute top-6 left-8 opacity-10">
+              <Icon name="Quote" size={80} className="text-[#E30613]" />
+            </div>
+            <div className="relative z-10">
+              <div className="font-oswald text-2xl font-bold mb-1">Евгений</div>
+              <div className="text-[#3183FF] text-sm mb-6 font-medium">Основатель стратегии «Квантовый Скачок»</div>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Я — обычный парень из села. Никаких кредитов, займов или стартового капитала. Но благодаря стратегии «Квантовый скачок» я создал за 10 месяцев денежный поток более <strong className="text-[#E30613]">1 000 000 рублей</strong>, начав с откладывания всего от 10 000 рублей в месяц.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Сейчас я трачу <strong>15 минут в день</strong> (имея только интернет и смартфон/ноутбук) и получаю от <strong className="text-[#E30613]">3 000 — 9 000 рублей ежедневно</strong>. Я больше не задаюсь вопросом «Где взять деньги на завтра?» — я знаю, что деньги есть всегда.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Я не только разрабатываю стратегии, но и сопровождаю каждого клиента на пути к успеху, обеспечивая полную поддержку и консультации. Вместе с вами мы будем достигать реальных результатов!
+              </p>
+
+              <div className="bg-black text-white p-6 text-center">
+                <p className="text-gray-300 mb-2">Для новичков разработана стратегия, которая приведёт вас к доходу</p>
+                <div className="font-oswald text-4xl font-bold text-[#E30613]">46 000 — 360 000 ₽</div>
+                <div className="text-gray-400 text-sm mt-1">ежемесячно</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONSULTATION */}
+      <section id="consultation" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Бесплатно</div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4">
+              Хотите изменить свою финансовую жизнь?
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Вы мечтаете выйти на новый уровень финансовой свободы и больше не работать на нескольких работах, чтобы обеспечить свою семью? Я помогу вам это сделать!
+            </p>
+            <p className="text-gray-800 font-semibold mt-4">
+              Приглашаю вас на бесплатную консультацию, на которой вы получите:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-5 mb-12">
+            {consultationBenefits.map((item, i) => (
+              <div key={i} className="group p-6 bg-[#D9D9D9]/30 border border-gray-100 hover:border-[#3183FF]/30 hover:bg-[#3183FF]/5 transition-all">
+                <div className="w-10 h-10 bg-[#3183FF] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name={item.icon} size={18} className="text-white" />
+                </div>
+                <div className="font-oswald font-semibold uppercase text-sm mb-2">{item.title}</div>
+                <p className="text-gray-600 text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-black text-white p-10 text-center">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
+            <p className="text-gray-300 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
+            <p className="text-white font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>
+            <button className="bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
+              Записаться на консультацию
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="py-20 bg-[#D9D9D9]/30">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Вопросы и ответы</div>
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Часто задаваемые вопросы</h2>
+            <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
+          </div>
+
+          <div className="space-y-2 mb-12">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white border border-gray-100">
                 <button
                   className="w-full flex items-center justify-between p-6 text-left"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
-                  <span className="font-oswald font-semibold uppercase text-sm pr-4">{faq.q}</span>
+                  <span className="font-oswald font-semibold uppercase text-sm pr-4">
+                    {i + 1}. {faq.q}
+                  </span>
                   <Icon
                     name={openFaq === i ? "Minus" : "Plus"}
                     size={20}
@@ -382,42 +395,11 @@ export default function Index() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className="py-24 bg-black text-white text-center relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-20 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMG})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black" />
-        <div className="relative z-10 max-w-3xl mx-auto px-4">
-          <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-4">Готов к прорыву?</div>
-          <h2 className="font-oswald text-5xl md:text-6xl font-bold uppercase mb-6 leading-none">
-            Начни свой<br />
-            <span className="text-[#E30613]">Квантовый</span><br />
-            Скачок сегодня
-          </h2>
-          <p className="text-gray-300 text-lg mb-10 max-w-lg mx-auto">
-            Присоединяйся к сотням учеников, которые уже изменили свою финансовую жизнь
-          </p>
-          <button className="bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
-            Хочу финансовую свободу
-          </button>
-          <div className="flex items-center justify-center gap-6 mt-8 text-gray-500 text-sm flex-wrap">
-            <span className="flex items-center gap-2">
-              <Icon name="Lock" size={14} />
-              Безопасная оплата
-            </span>
-            <span className="flex items-center gap-2">
-              <Icon name="RefreshCw" size={14} />
-              Возврат 14 дней
-            </span>
-            <span className="flex items-center gap-2">
-              <Icon name="Headphones" size={14} />
-              Поддержка 24/7
-            </span>
+          <div className="text-center">
+            <button className="bg-[#E30613] text-white font-oswald font-bold px-12 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
+              Хочу участвовать
+            </button>
           </div>
         </div>
       </section>
