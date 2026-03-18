@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMG = "https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/files/ac40b789-58f8-40a9-b06e-2c75cd5a509f.jpg";
@@ -50,6 +50,31 @@ const faqs = [
   { q: "Я уже пробовал, но не получилось. Чем это отличается?", a: "Мы будем работать по проверенной стратегии, которая дала результат многим людям." },
   { q: "Как записаться на консультацию?", a: "Места ограничены, напишите мне, и я забронирую для вас время." },
 ];
+
+function Timer() {
+  const [seconds, setSeconds] = useState(15 * 60);
+
+  useEffect(() => {
+    if (seconds <= 0) return;
+    const id = setInterval(() => setSeconds(s => s - 1), 1000);
+    return () => clearInterval(id);
+  }, [seconds]);
+
+  const m = String(Math.floor(seconds / 60)).padStart(2, "0");
+  const s = String(seconds % 60).padStart(2, "0");
+
+  return (
+    <div className="mt-3 flex flex-col items-center gap-1">
+      <p className="text-sm font-semibold text-[#E30613] uppercase tracking-wider">⚠ Места ограничены</p>
+      <div className="flex items-center gap-1">
+        <div className="bg-black text-white font-oswald text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-lg">{m}</div>
+        <span className="text-black font-oswald text-2xl font-bold">:</span>
+        <div className="bg-black text-white font-oswald text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-lg">{s}</div>
+      </div>
+      <p className="text-xs text-gray-500">до конца бронирования</p>
+    </div>
+  );
+}
 
 export default function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -243,10 +268,11 @@ export default function Index() {
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col items-center gap-2 justify-center">
             <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
               Записаться на Бесплатную Консультацию
             </a>
+            <Timer />
           </div>
         </div>
       </section>
@@ -341,10 +367,11 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col items-center gap-2 justify-center">
             <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full text-center">
               Записаться на Бесплатную Консультацию
             </a>
+            <Timer />
           </div>
         </div>
       </section>
@@ -420,6 +447,7 @@ export default function Index() {
             <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
               Записаться на Бесплатную Консультацию
             </a>
+            <Timer />
           </div>
         </div>
       </section>
@@ -458,10 +486,11 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="flex flex-col items-center gap-2">
             <a href="https://t.me/m/SYXK-lRPMzFi" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#E30613] text-white font-oswald font-bold px-12 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red rounded-full">
               Записаться на Бесплатную Консультацию
             </a>
+            <Timer />
           </div>
         </div>
       </section>
