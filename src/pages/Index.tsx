@@ -77,25 +77,22 @@ export default function Index() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-16 bg-black overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url(${HERO_IMG})` }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/60" />
-
+      <section className="relative min-h-[70vh] flex items-center pt-16 bg-white overflow-hidden border-b border-gray-100">
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-24 text-center md:text-left">
           <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
-            <h1 className="font-oswald text-white font-bold leading-none uppercase mb-8">
+            <h1 className="font-oswald text-black font-bold leading-none uppercase mb-8">
               <span className="block text-5xl md:text-7xl">КВАНТОВЫЙ</span>
               <span className="block text-5xl md:text-7xl text-[#E30613]">СКАЧОК:</span>
-              <span className="block text-3xl md:text-5xl mt-2 text-gray-200">СОЗДАЙ ДЕНЕЖНЫЙ</span>
+              <span className="block text-3xl md:text-5xl mt-2 text-gray-700">СОЗДАЙ ДЕНЕЖНЫЙ</span>
               <span className="block text-3xl md:text-5xl text-[#3183FF]">ПОТОК НОВИЧКА</span>
             </h1>
-            <p className="text-gray-300 text-xl leading-relaxed max-w-2xl md:mx-0 mx-auto">
+            <p className="text-gray-600 text-xl leading-relaxed max-w-2xl md:mx-0 mx-auto">
               Для тех, кто хочет выйти на новый уровень финансовой стабильности, преодолев страхи и неуверенность.
             </p>
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-300 animate-bounce">
           <Icon name="ChevronDown" size={32} />
         </div>
       </section>
@@ -113,32 +110,32 @@ export default function Index() {
       </section>
 
       {/* STRATEGY BLOCK */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 text-[#E30613] font-oswald text-sm uppercase tracking-widest mb-4">
               <span>🔥</span> Взращиваем поток новичка
             </div>
-            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2">
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2 text-black">
               по стратегии «Квантовый Скачок — Поток Новичка»
             </h2>
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
               Цель: создать устойчивый денежный поток, который растёт и работает на участника, обеспечивая стабильный доход и возможность реинвеста.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-14">
             {/* Left: How it works */}
-            <div className="bg-white/5 border border-white/10 p-8">
+            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8">
               <div className="font-oswald text-[#3183FF] uppercase tracking-wider text-sm mb-5">Начало</div>
-              <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
+              <ul className="space-y-4 text-gray-700 text-sm leading-relaxed">
                 <li className="flex gap-3">
                   <span className="text-[#E30613] font-bold mt-0.5">→</span>
-                  Участник вносит в Поток Новичка любую сумму от <strong className="text-white">2 000 ₽ до 200 000 ₽</strong>, которая увеличивается на <strong className="text-[#E30613]">50%</strong>.
+                  Участник вносит в Поток Новичка любую сумму от <strong className="text-black">2 000 ₽ до 200 000 ₽</strong>, которая увеличивается на <strong className="text-[#E30613]">50%</strong>.
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#E30613] font-bold mt-0.5">→</span>
-                  Поток можно постепенно довести до максимума <strong className="text-white">300 000 ₽</strong>.
+                  Поток можно постепенно довести до максимума <strong className="text-black">300 000 ₽</strong>.
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#E30613] font-bold mt-0.5">→</span>
@@ -148,26 +145,26 @@ export default function Index() {
             </div>
 
             {/* Right: Accruals */}
-            <div className="bg-[#E30613]/10 border border-[#E30613]/30 p-8">
+            <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-8">
               <div className="font-oswald text-[#E30613] uppercase tracking-wider text-sm mb-5">Начисления</div>
               <div className="text-center mb-6">
-                <div className="font-oswald text-6xl font-bold text-white">2%</div>
-                <div className="text-gray-400 text-sm">ежедневно на остаток потока</div>
+                <div className="font-oswald text-6xl font-bold text-black">2%</div>
+                <div className="text-gray-500 text-sm">ежедневно на остаток потока</div>
               </div>
-              <div className="bg-black/30 p-4 mb-4">
+              <div className="bg-[#D9D9D9]/40 p-4 mb-4">
                 <div className="text-center">
                   <span className="font-oswald text-3xl font-bold text-[#E30613]">6 000 ₽</span>
-                  <span className="text-gray-400 text-sm block">в день при максимальном потоке 300 000 ₽</span>
+                  <span className="text-gray-500 text-sm block">в день при максимальном потоке 300 000 ₽</span>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-300 text-sm">
+              <ul className="space-y-2 text-gray-700 text-sm">
                 <li className="flex gap-3">
                   <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
-                  Реинвестировать <strong className="text-white">4 000 ₽</strong> обратно в поток для роста
+                  Реинвестировать <strong className="text-black">4 000 ₽</strong> обратно в поток для роста
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#3183FF] font-bold mt-0.5">✦</span>
-                  <strong className="text-white">2 000 ₽</strong> забрать на личные расходы каждый день
+                  <strong className="text-black">2 000 ₽</strong> забрать на личные расходы каждый день
                 </li>
               </ul>
             </div>
@@ -178,7 +175,7 @@ export default function Index() {
             <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
               Хочу участвовать
             </button>
-            <button className="border border-white/30 text-white font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-white/60 transition-colors">
+            <button className="border border-gray-300 text-black font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-gray-500 transition-colors">
               Узнать подробнее
             </button>
           </div>
@@ -186,7 +183,7 @@ export default function Index() {
       </section>
 
       {/* FOR WHOM */}
-      <section className="py-20 bg-[#D9D9D9]/30">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Самопроверка</div>
@@ -195,7 +192,7 @@ export default function Index() {
           </div>
           <div className="space-y-4 mb-12">
             {forWhom.map((item, i) => (
-              <div key={i} className="flex gap-4 bg-white p-6 border-l-4 border-[#3183FF]">
+              <div key={i} className="flex gap-4 bg-[#D9D9D9]/30 p-6 border-l-4 border-[#3183FF]">
                 <div className="w-8 h-8 bg-[#3183FF] flex items-center justify-center flex-shrink-0 text-white font-oswald font-bold text-sm">
                   {i + 1}
                 </div>
@@ -203,8 +200,8 @@ export default function Index() {
               </div>
             ))}
           </div>
-          <div className="bg-black text-white p-8">
-            <p className="text-gray-300 leading-relaxed text-center">
+          <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-8">
+            <p className="text-gray-700 leading-relaxed text-center">
               Многие традиционные способы заработка требуют огромных усилий и времени. В отличие от них, мы предлагаем автоматическую систему, где деньги начинают работать для вас с первого дня, и результаты не заставляют себя долго ждать.
             </p>
           </div>
@@ -233,44 +230,44 @@ export default function Index() {
       </section>
 
       {/* STRATEGY DESCRIPTION */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4">
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4 text-black">
               «Квантовый Скачок — Поток Новичка»
             </h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
+            <p className="text-gray-500 max-w-xl mx-auto">
               Поток Новичка — это стратегия, которая сочетает:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mb-14">
             {strategyFeatures.map((f, i) => (
-              <div key={i} className="flex items-center gap-4 border border-white/10 p-5 hover:border-[#E30613]/40 transition-colors">
+              <div key={i} className="flex items-center gap-4 border border-gray-200 p-5 hover:border-[#E30613]/40 transition-colors bg-[#D9D9D9]/20">
                 <div className="w-8 h-8 bg-[#E30613] flex items-center justify-center flex-shrink-0">
                   <Icon name="Check" size={16} className="text-white" />
                 </div>
-                <span className="text-gray-200">{f}</span>
+                <span className="text-gray-700">{f}</span>
               </div>
             ))}
           </div>
 
-          <div className="bg-white/5 border border-white/10 p-8 text-center mb-12">
-            <p className="text-gray-300 text-lg leading-relaxed">
-              Участник получает <strong className="text-white">контролируемый, растущий и практически бесконечный поток дохода</strong>, который можно использовать для личных расходов и инвестиций в расширение структуры.
+          <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8 text-center mb-12">
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Участник получает <strong className="text-black">контролируемый, растущий и практически бесконечный поток дохода</strong>, который можно использовать для личных расходов и инвестиций в расширение структуры.
             </p>
           </div>
 
           <div className="text-center mb-10">
             <div className="font-oswald text-[#3183FF] text-sm uppercase tracking-widest mb-3">Кому подходит</div>
-            <h3 className="font-oswald text-2xl md:text-3xl font-bold uppercase">Этот проект идеально подходит:</h3>
+            <h3 className="font-oswald text-2xl md:text-3xl font-bold uppercase text-black">Этот проект идеально подходит:</h3>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             {idealFor.map((item, i) => (
-              <div key={i} className="bg-white/5 border border-white/10 p-6 hover:border-[#3183FF]/40 transition-colors">
+              <div key={i} className="bg-[#D9D9D9]/20 border border-gray-200 p-6 hover:border-[#3183FF]/40 transition-colors">
                 <div className="font-oswald text-[#3183FF] uppercase font-semibold mb-2">{item.title}</div>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -279,7 +276,7 @@ export default function Index() {
             <button className="bg-[#E30613] text-white font-oswald font-bold px-10 py-4 text-base uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
               Хочу участвовать
             </button>
-            <button className="border border-white/30 text-white font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-white/60 transition-colors">
+            <button className="border border-gray-300 text-black font-oswald px-10 py-4 text-base uppercase tracking-wider hover:border-gray-500 transition-colors">
               Записаться
             </button>
           </div>
@@ -287,7 +284,7 @@ export default function Index() {
       </section>
 
       {/* AUTHOR */}
-      <section id="author" className="py-20 bg-[#D9D9D9]/30">
+      <section id="author" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">История успеха</div>
@@ -313,10 +310,10 @@ export default function Index() {
                 Я не только разрабатываю стратегии, но и сопровождаю каждого клиента на пути к успеху, обеспечивая полную поддержку и консультации. Вместе с вами мы будем достигать реальных результатов!
               </p>
 
-              <div className="bg-black text-white p-6 text-center">
-                <p className="text-gray-300 mb-2">Для новичков разработана стратегия, которая приведёт вас к доходу</p>
+              <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-6 text-center">
+                <p className="text-gray-600 mb-2">Для новичков разработана стратегия, которая приведёт вас к доходу</p>
                 <div className="font-oswald text-4xl font-bold text-[#E30613]">46 000 — 360 000 ₽</div>
-                <div className="text-gray-400 text-sm mt-1">ежемесячно</div>
+                <div className="text-gray-500 text-sm mt-1">ежемесячно</div>
               </div>
             </div>
           </div>
@@ -351,10 +348,10 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="bg-black text-white p-10 text-center">
+          <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-10 text-center">
             <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
-            <p className="text-gray-300 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
-            <p className="text-white font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>
+            <p className="text-gray-600 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
+            <p className="text-black font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>
             <button className="bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
               Записаться на консультацию
             </button>
@@ -363,7 +360,7 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 bg-[#D9D9D9]/30">
+      <section id="faq" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Вопросы и ответы</div>
@@ -405,18 +402,18 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black border-t border-white/10 py-8">
+      <footer className="bg-white border-t border-gray-200 py-8">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="font-oswald font-bold text-lg tracking-widest uppercase">
             <span className="text-[#E30613]">ПОТОК</span>
-            <span className="text-white"> НОВИЧКА</span>
+            <span className="text-black"> НОВИЧКА</span>
           </div>
-          <div className="text-gray-600 text-xs text-center">
+          <div className="text-gray-400 text-xs text-center">
             © 2024 Поток Новичка. Все права защищены.
           </div>
-          <div className="flex gap-6 text-gray-600 text-xs">
-            <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
-            <a href="#" className="hover:text-white transition-colors">Договор оферты</a>
+          <div className="flex gap-6 text-gray-400 text-xs">
+            <a href="#" className="hover:text-black transition-colors">Политика конфиденциальности</a>
+            <a href="#" className="hover:text-black transition-colors">Договор оферты</a>
           </div>
         </div>
       </footer>
