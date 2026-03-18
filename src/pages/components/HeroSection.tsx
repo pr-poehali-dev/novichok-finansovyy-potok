@@ -23,18 +23,23 @@ export default function HeroSection() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-[70vh] flex items-center pt-16 bg-white overflow-hidden border-b border-gray-100">
+      <section
+        className="relative min-h-[70vh] flex items-center pt-16 overflow-hidden border-b border-gray-100"
+        style={{ backgroundImage: "url('https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/bucket/05dfa0db-4f5b-4adb-b3a4-bae87cdac722.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-24 text-center md:text-left">
           <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
-            <h1 className="font-oswald text-black font-bold leading-none uppercase mb-8">
-              <span className="block text-5xl md:text-7xl">КВАНТОВЫЙ</span>
+            <h1 className="font-oswald font-bold leading-none uppercase mb-8">
+              <span className="block text-5xl md:text-7xl text-[#E30613]">КВАНТОВЫЙ</span>
               <span className="block text-5xl md:text-7xl text-[#E30613]">СКАЧОК:</span>
-              <span className="block text-3xl md:text-5xl mt-2 text-gray-700">СОЗДАЙ ДЕНЕЖНЫЙ</span>
-              <span className="block text-3xl md:text-5xl text-[#3183FF]">ПОТОК НОВИЧКА</span>
+              <span className="block text-3xl md:text-5xl mt-6 text-gray-700">СОЗДАЙ ДЕНЕЖНЫЙ</span>
+              <span className="block text-3xl md:text-5xl mt-4 text-[#3183FF]">ПОТОК НОВИЧКА</span>
             </h1>
-            <p className="text-gray-600 text-xl leading-relaxed max-w-2xl md:mx-0 mx-auto">
-              Для тех, кто хочет выйти на новый уровень финансовой стабильности, преодолев страхи и неуверенность.
-            </p>
+            <blockquote className="border-l-4 border-[#E30613] pl-5 mt-6 max-w-2xl md:mx-0 mx-auto">
+              <p className="text-gray-700 text-xl italic leading-relaxed">
+                «Для тех, кто хочет выйти на новый уровень финансовой стабильности, преодолев страхи и неуверенность.»
+              </p>
+            </blockquote>
           </div>
         </div>
 
