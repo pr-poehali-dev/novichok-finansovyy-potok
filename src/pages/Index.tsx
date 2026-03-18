@@ -394,11 +394,11 @@ export default function Index() {
                 <img
                   src="https://cdn.poehali.dev/projects/d448d1bd-9c2b-478e-9d96-bfe44c396f34/bucket/89c61107-6718-40d7-a573-c668b5f532f9.png"
                   alt="Евгений"
-                  className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover object-top border-4 border-[#E30613] shadow-lg flex-shrink-0"
+                  className="w-40 h-52 md:w-48 md:h-64 rounded-2xl object-cover object-top border-4 border-[#E30613] shadow-lg flex-shrink-0"
                 />
                 <div>
-                  <div className="font-oswald text-2xl font-bold mb-1">Евгений</div>
-                  <div className="text-[#3183FF] text-sm font-medium">Основатель стратегии «Квантовый Скачок»</div>
+                  <div className="font-oswald text-3xl md:text-4xl font-bold mb-2">Евгений</div>
+                  <div className="text-[#3183FF] text-base md:text-lg font-medium">Основатель стратегии «Квантовый Скачок»</div>
                 </div>
               </div>
 
@@ -414,7 +414,7 @@ export default function Index() {
 
               <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-6 text-center">
                 <p className="text-gray-600 mb-2">Для новичков разработана стратегия, которая приведёт вас к доходу</p>
-                <div className="font-oswald text-4xl font-bold text-[#E30613]">46 000 — 360 000 ₽</div>
+                <div className="font-oswald text-4xl font-bold text-[#E30613]">45 500 — 360 000 ₽</div>
                 <div className="text-gray-500 text-sm mt-1">ежемесячно</div>
               </div>
             </div>
