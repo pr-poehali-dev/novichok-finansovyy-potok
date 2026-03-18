@@ -113,7 +113,7 @@ export default function Index() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 text-[#E30613] font-oswald text-sm uppercase tracking-widest mb-4">
+            <div className="inline-flex items-center gap-2 text-[#E30613] font-oswald text-2xl font-bold uppercase tracking-widest mb-4">
               <span>🔥</span> Взращиваем поток новичка
             </div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2 text-black">
@@ -284,7 +284,7 @@ export default function Index() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Трансформация</div>
+            <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Трансформация</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Что изменится в вашей жизни</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
@@ -331,7 +331,7 @@ export default function Index() {
           </div>
 
           <div className="text-center mb-10">
-            <div className="font-oswald text-[#3183FF] text-sm uppercase tracking-widest mb-3">Кому подходит</div>
+            <div className="font-oswald text-[#3183FF] text-2xl font-bold uppercase tracking-widest mb-3">Кому подходит</div>
             <h3 className="font-oswald text-2xl md:text-3xl font-bold uppercase text-black">Этот проект идеально подходит:</h3>
           </div>
 
@@ -359,7 +359,7 @@ export default function Index() {
       <section id="author" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">История успеха</div>
+            <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">История успеха</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Автор стратегии</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
@@ -396,7 +396,6 @@ export default function Index() {
       <section id="consultation" className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Бесплатно</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4">
               Хотите изменить свою финансовую жизнь?
             </h2>
@@ -421,7 +420,7 @@ export default function Index() {
           </div>
 
           <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-10 text-center">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
+            <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
             <p className="text-gray-600 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
             <p className="text-black font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>
             <button className="bg-[#E30613] text-white font-oswald font-bold px-14 py-5 text-xl uppercase tracking-wider hover:bg-red-700 transition-all animate-pulse-red">
@@ -435,7 +434,7 @@ export default function Index() {
       <section id="faq" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-oswald text-[#E30613] text-sm uppercase tracking-widest mb-3">Вопросы и ответы</div>
+            <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Вопросы и ответы</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Часто задаваемые вопросы</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
