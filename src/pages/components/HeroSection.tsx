@@ -29,11 +29,10 @@ export default function HeroSection() {
       >
         <div className="relative z-10 max-w-5xl mx-auto px-4 py-24 text-center md:text-left">
           <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
-            <h1 className="font-oswald font-bold leading-tight uppercase mb-8">
-              <span className="block text-3xl md:text-5xl text-gray-700">Создай Денежный Поток Новичка</span>
-              <span className="block text-3xl md:text-5xl mt-4 text-gray-700">и Соверши</span>
-              <span className="block text-4xl md:text-6xl mt-2 text-[#E30613]">Квантовый Скачок</span>
-              <span className="block text-3xl md:text-5xl mt-2 text-[#3183FF]">в Мир Финансовой Свободы</span>
+            <h1 className="font-oswald font-bold leading-tight mb-8 text-4xl md:text-6xl">
+              <span className="text-gray-700">Поток Новичка — </span>
+              <span className="text-[#E30613]">Твой квантовый скачок</span>
+              <span className="text-gray-700"> к финансовой свободе.</span>
             </h1>
             <blockquote className="border-l-4 border-[#E30613] pl-5 mt-6 max-w-2xl md:mx-0 mx-auto">
               <p className="text-gray-700 text-xl italic leading-relaxed">
