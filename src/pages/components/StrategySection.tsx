@@ -9,11 +9,13 @@ export default function StrategySection() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 text-[#E30613] font-oswald text-2xl font-bold uppercase tracking-widest mb-4">
-              <span>🔥</span> Взращиваем поток новичка
+            <div className="inline-flex items-center gap-2 font-oswald text-2xl font-bold uppercase tracking-widest mb-4">
+              <span>🔥</span>
+              <span className="text-black">ВЗРАЩИВАЕМ </span>
+              <span className="text-[#3183FF]">ПОТОК НОВИЧКА</span>
             </div>
-            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2 text-black">
-              по стратегии «Квантовый Скачок — Поток Новичка»
+            <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-2">
+              по стратегии «<span className="text-[#E30613]">КВАНТОВЫЙ СКАЧОК</span> — <span className="text-[#3183FF]">ПОТОК НОВИЧКА</span>»
             </h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
               Цель: создать устойчивый денежный поток, который растёт и работает на участника, обеспечивая стабильный доход и возможность реинвеста.
@@ -22,7 +24,7 @@ export default function StrategySection() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-14">
             {/* Left: Circular scheme */}
-            <div className="bg-[#D9D9D9]/30 border border-gray-200 p-6 flex flex-col items-center justify-center min-h-[420px]">
+            <div className="bg-[#D9D9D9]/30 border border-gray-200 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[420px] w-full">
               <div className="font-oswald text-[#3183FF] uppercase tracking-widest text-2xl font-bold mb-8 text-center">Начало</div>
               <div className="relative w-full" style={{ paddingBottom: '100%' }}>
                 <div className="absolute inset-0">
@@ -63,7 +65,7 @@ export default function StrategySection() {
             </div>
 
             {/* Right: Accruals circular scheme */}
-            <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-6 flex flex-col items-center justify-center min-h-[420px]">
+            <div className="bg-[#E30613]/5 border border-[#E30613]/20 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[420px] w-full">
               <div className="font-oswald text-[#E30613] uppercase tracking-widest text-2xl font-bold mb-8 text-center">Начисления</div>
               <div className="relative w-full" style={{ paddingBottom: '100%' }}>
                 <div className="absolute inset-0">
@@ -136,7 +138,7 @@ export default function StrategySection() {
           </div>
           <div className="space-y-4 mb-12">
             {forWhom.map((item, i) => (
-              <div key={i} className="flex gap-4 bg-[#D9D9D9]/30 p-6 border-l-4 border-[#3183FF]">
+              <div key={i} className="flex gap-4 bg-[#D9D9D9]/30 p-6 border-l-4 border-[#3183FF] rounded-xl">
                 <div className="w-8 h-8 bg-[#3183FF] flex items-center justify-center flex-shrink-0 text-white font-oswald font-bold text-sm">
                   {i + 1}
                 </div>
@@ -144,7 +146,7 @@ export default function StrategySection() {
               </div>
             ))}
           </div>
-          <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-8">
+          <div className="bg-[#E30613]/5 border border-[#E30613]/20 rounded-2xl p-8">
             <p className="text-gray-700 leading-relaxed text-center">
               Многие традиционные способы заработка требуют огромных усилий и времени. В отличие от них, мы предлагаем автоматическую систему, где деньги начинают работать для вас с первого дня, и результаты не заставляют себя долго ждать.
             </p>
@@ -162,7 +164,7 @@ export default function StrategySection() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {lifeChanges.map((item, i) => (
-              <div key={i} className="group flex gap-5 p-6 bg-[#D9D9D9]/30 hover:bg-[#E30613]/5 border border-transparent hover:border-[#E30613]/20 transition-all">
+              <div key={i} className="group flex gap-5 p-6 bg-[#D9D9D9]/30 hover:bg-[#E30613]/5 border border-transparent hover:border-[#E30613]/20 transition-all rounded-2xl">
                 <div className="w-12 h-12 bg-[#E30613] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                   <Icon name={item.icon} size={22} className="text-white" />
                 </div>
@@ -187,7 +189,7 @@ export default function StrategySection() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-14">
             {strategyFeatures.map((f, i) => (
-              <div key={i} className="flex items-center gap-4 border border-gray-200 p-5 hover:border-[#E30613]/40 transition-colors bg-[#D9D9D9]/20">
+              <div key={i} className="flex items-center gap-4 border border-gray-200 rounded-xl p-5 hover:border-[#E30613]/40 transition-colors bg-[#D9D9D9]/20">
                 <div className="w-8 h-8 bg-[#E30613] flex items-center justify-center flex-shrink-0">
                   <Icon name="Check" size={16} className="text-white" />
                 </div>
@@ -196,7 +198,7 @@ export default function StrategySection() {
             ))}
           </div>
 
-          <div className="bg-[#D9D9D9]/30 border border-gray-200 p-8 text-center mb-12">
+          <div className="bg-[#D9D9D9]/30 border border-gray-200 rounded-2xl p-8 text-center mb-12">
             <p className="text-gray-700 text-lg leading-relaxed">
               Участник получает <strong className="text-black">контролируемый, растущий и практически бесконечный поток дохода</strong>, который можно использовать для личных расходов и инвестиций в расширение структуры.
             </p>
@@ -209,7 +211,7 @@ export default function StrategySection() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             {idealFor.map((item, i) => (
-              <div key={i} className="bg-[#D9D9D9]/20 border border-gray-200 p-6 hover:border-[#3183FF]/40 transition-colors">
+              <div key={i} className="bg-[#D9D9D9]/20 border border-gray-200 rounded-2xl p-6 hover:border-[#3183FF]/40 transition-colors">
                 <div className="font-oswald text-[#3183FF] uppercase font-semibold mb-2">{item.title}</div>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
               </div>

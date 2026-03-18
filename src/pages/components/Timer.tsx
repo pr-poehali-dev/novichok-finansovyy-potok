@@ -4,10 +4,9 @@ export default function Timer() {
   const [seconds, setSeconds] = useState(15 * 60);
 
   useEffect(() => {
-    if (seconds <= 0) return;
-    const id = setInterval(() => setSeconds(s => s - 1), 1000);
+    const id = setInterval(() => setSeconds(s => s <= 1 ? 15 * 60 : s - 1), 1000);
     return () => clearInterval(id);
-  }, [seconds]);
+  }, []);
 
   const m = String(Math.floor(seconds / 60)).padStart(2, "0");
   const s = String(seconds % 60).padStart(2, "0");

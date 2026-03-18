@@ -25,7 +25,7 @@ export default function ConsultationSection() {
 
           <div className="grid md:grid-cols-3 gap-5 mb-12">
             {consultationBenefits.map((item, i) => (
-              <div key={i} className="group p-6 bg-[#D9D9D9]/30 border border-gray-100 hover:border-[#3183FF]/30 hover:bg-[#3183FF]/5 transition-all">
+              <div key={i} className="group p-6 bg-[#D9D9D9]/30 border border-gray-100 rounded-2xl hover:border-[#3183FF]/30 hover:bg-[#3183FF]/5 transition-all">
                 <div className="w-10 h-10 bg-[#3183FF] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon name={item.icon} size={18} className="text-white" />
                 </div>
@@ -35,7 +35,7 @@ export default function ConsultationSection() {
             ))}
           </div>
 
-          <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-10 text-center">
+          <div className="bg-[#E30613]/5 border border-[#E30613]/20 rounded-2xl p-10 text-center">
             <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Не откладывайте мечты на завтра!</div>
             <p className="text-gray-600 mb-2">Места на консультацию ограничены, и я хочу, чтобы именно вы стали частью этой трансформации.</p>
             <p className="text-black font-semibold mb-8">Присоединяйтесь прямо сейчас и начните действовать!</p>

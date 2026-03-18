@@ -23,7 +23,7 @@ export default function AuthorSection() {
               />
               <div>
                 <div className="font-oswald text-3xl md:text-4xl font-bold mb-2">Евгений</div>
-                <div className="text-[#3183FF] text-base md:text-lg font-medium">Основатель стратегии «Квантовый Скачок»</div>
+                <div className="text-[#3183FF] text-lg md:text-xl font-semibold">Основатель стратегии «Квантовый Скачок»</div>
               </div>
             </div>
 
@@ -33,13 +33,13 @@ export default function AuthorSection() {
             <p className="text-gray-700 leading-relaxed mb-4">
               Сейчас я трачу <strong>15 минут в день</strong> (имея только интернет и смартфон/ноутбук) и получаю от<br/><strong className="text-[#E30613]">3 000 — 9 000 рублей ежедневно</strong>. Я больше не задаюсь вопросом «Где взять деньги на завтра?» — я знаю, что деньги есть всегда.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6 font-semibold">
               Я не только разрабатываю стратегии, но и сопровождаю каждого клиента на пути к успеху, обеспечивая полную поддержку и консультации. Вместе с вами мы будем достигать реальных результатов!
             </p>
 
-            <div className="bg-[#E30613]/5 border border-[#E30613]/20 p-6 text-center">
+            <div className="bg-[#E30613]/5 border border-[#E30613]/20 rounded-2xl p-6 text-center">
               <p className="text-gray-600 mb-2">Для новичков разработана стратегия, которая приведёт вас к доходу</p>
-              <div className="font-oswald text-4xl font-bold text-[#E30613]">45 500 — 360 000 ₽</div>
+              <div className="font-oswald text-4xl font-bold text-[#E30613]">45 000 — 360 000 ₽</div>
               <div className="text-gray-500 text-sm mt-1">ежемесячно</div>
             </div>
           </div>
