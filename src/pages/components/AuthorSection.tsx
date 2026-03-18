@@ -6,7 +6,7 @@ export default function AuthorSection() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Стратегия Успеха</div>
-          <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Евгений</h2>
+          <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Стратегия</h2>
           <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
         </div>
 
@@ -23,7 +23,7 @@ export default function AuthorSection() {
               />
               <div>
                 <div className="font-oswald text-3xl md:text-4xl font-bold mb-2">Евгений</div>
-                <div className="text-[#3183FF] text-lg md:text-xl font-semibold">Евгений — проводник в экономику нового формата, где деньги работают на тебя.</div>
+                <div className="text-[#3183FF] text-lg md:text-xl font-semibold">Проводник в экономику нового формата, где деньги работают на тебя.</div>
               </div>
             </div>
 
