@@ -9,9 +9,9 @@ export default function ConsultationSection() {
   return (
     <>
       {/* CONSULTATION */}
-      <section id="consultation" className="py-20 bg-white">
+      <section id="consultation" className="py-10 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4">
               Хотите изменить свою финансовую жизнь?
             </h2>
@@ -23,7 +23,7 @@ export default function ConsultationSection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-5 mb-12">
+          <div className="grid md:grid-cols-3 gap-5 mb-8">
             {consultationBenefits.map((item, i) => (
               <div key={i} className="group p-6 bg-[#D9D9D9]/30 border border-gray-100 rounded-2xl hover:border-[#3183FF]/30 hover:bg-[#3183FF]/5 transition-all">
                 <div className="w-10 h-10 bg-[#3183FF] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
@@ -48,15 +48,15 @@ export default function ConsultationSection() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 bg-white">
+      <section id="faq" className="py-10 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Вопросы и ответы</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Часто задаваемые вопросы</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
           </div>
 
-          <div className="space-y-2 mb-12">
+          <div className="space-y-2 mb-8">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white border border-gray-100">
                 <button

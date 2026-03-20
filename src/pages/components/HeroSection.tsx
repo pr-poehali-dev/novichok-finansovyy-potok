@@ -48,14 +48,14 @@ export default function HeroSection() {
       </section>
 
       {/* INTRO */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Вы устали от нестабильности в финансах и хотите построить надёжный источник дохода, который будет расти с каждым месяцем?
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Присоединяйтесь к <strong className="text-[#E30613]">«ПотокCash»</strong> и узнайте, как создавая поток с минимальными вложениями, можно получать стабильный доход уже с первого дня. Мы поможем вам не только стартовать, но и управлять финансовыми потоками.
-          </p>
+      <section id="about" className="py-10 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center flex flex-col gap-6">
+          <blockquote className="bg-gray-100/70 border border-gray-200 rounded-2xl px-8 py-5 text-gray-700 text-lg leading-relaxed italic">
+            «Вы устали от нестабильности в финансах и хотите построить надёжный источник дохода, который будет расти с каждым месяцем?»
+          </blockquote>
+          <blockquote className="bg-pink-50/80 border border-pink-200 rounded-xl px-8 py-5 text-gray-700 text-lg leading-relaxed italic">
+            «Присоединяйтесь к <strong className="text-[#E30613]">«ПотокCash»</strong> и узнайте, как создавая поток с минимальными вложениями, можно получать стабильный доход уже с первого дня. Мы поможем вам не только стартовать, но и управлять финансовыми потоками.»
+          </blockquote>
         </div>
       </section>
     </>

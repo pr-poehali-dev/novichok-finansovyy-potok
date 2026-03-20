@@ -6,9 +6,9 @@ export default function StrategySection() {
   return (
     <>
       {/* STRATEGY BLOCK */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 font-oswald text-2xl font-bold uppercase tracking-widest mb-4">
               <span>🔥</span>
               <span className="text-black">ВЗРАЩИВАЕМ </span>
@@ -22,7 +22,7 @@ export default function StrategySection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-14">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Left: Circular scheme */}
             <div className="bg-[#D9D9D9]/30 border border-gray-200 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[420px] w-full">
               <div className="font-oswald text-[#3183FF] uppercase tracking-widest text-2xl font-bold mb-8 text-center">Начало</div>
@@ -129,9 +129,9 @@ export default function StrategySection() {
       </section>
 
       {/* FOR WHOM */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="font-oswald text-[#E30613] text-2xl uppercase tracking-widest mb-3 font-bold">Самопроверка</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Этот проект для вас, если вы:</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
@@ -155,9 +155,9 @@ export default function StrategySection() {
       </section>
 
       {/* LIFE CHANGES */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Трансформация</div>
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase">Что изменится в вашей жизни</h2>
             <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
@@ -176,9 +176,9 @@ export default function StrategySection() {
       </section>
 
       {/* STRATEGY DESCRIPTION */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="font-oswald text-3xl md:text-4xl font-bold uppercase mb-4 text-black">
               «<span className="text-[#E30613]">Квантовый Скачок</span> — <span className="text-[#3183FF]">Поток Новичка</span>»
             </h2>
@@ -187,7 +187,7 @@ export default function StrategySection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-14">
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
             {strategyFeatures.map((f, i) => (
               <div key={i} className="flex items-center gap-4 border border-gray-200 rounded-xl p-5 hover:border-[#E30613]/40 transition-colors bg-[#D9D9D9]/20">
                 <div className="w-8 h-8 bg-[#E30613] flex items-center justify-center flex-shrink-0">
@@ -198,7 +198,7 @@ export default function StrategySection() {
             ))}
           </div>
 
-          <div className="bg-[#D9D9D9]/30 border border-gray-200 rounded-2xl p-8 text-center mb-12">
+          <div className="bg-[#D9D9D9]/30 border border-gray-200 rounded-2xl p-8 text-center mb-8">
             <p className="text-gray-700 text-lg leading-relaxed">
               Участник получает <strong className="text-black">контролируемый, растущий и практически бесконечный поток дохода</strong>, который можно использовать для личных расходов и инвестиций в расширение структуры.
             </p>
@@ -209,7 +209,7 @@ export default function StrategySection() {
             <h3 className="font-oswald text-2xl md:text-3xl font-bold uppercase text-black">Этот проект идеально подходит:</h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
             {idealFor.map((item, i) => (
               <div key={i} className="bg-[#D9D9D9]/20 border border-gray-200 rounded-2xl p-6 hover:border-[#3183FF]/40 transition-colors">
                 <div className="font-oswald text-[#3183FF] uppercase font-semibold mb-2">{item.title}</div>
