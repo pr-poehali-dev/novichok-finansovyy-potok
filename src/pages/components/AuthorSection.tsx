@@ -2,9 +2,9 @@ import Icon from "@/components/ui/icon";
 
 export default function AuthorSection() {
   return (
-    <section id="author" className="py-20 bg-white">
+    <section id="author" className="py-8 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <div className="font-oswald text-[#E30613] text-2xl font-bold uppercase tracking-widest mb-3">Стратегия Успеха</div>
 
           <div className="w-16 h-1 bg-[#E30613] mx-auto mt-4" />
